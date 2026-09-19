@@ -1,0 +1,15 @@
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\bin\Debug\net10.0\KASHOP.BLL.deps.json
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\bin\Debug\net10.0\KASHOP.BLL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\bin\Debug\net10.0\KASHOP.BLL.pdb
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\bin\Debug\net10.0\KASHOP.DAL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\bin\Debug\net10.0\KASHOP.DAL.pdb
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.csproj.AssemblyReference.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.AssemblyInfoInputs.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.AssemblyInfo.cs
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.csproj.CoreCompileInputs.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.csproj.Up2Date
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\refint\KASHOP.BLL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.pdb
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\ref\KASHOP.BLL.dll

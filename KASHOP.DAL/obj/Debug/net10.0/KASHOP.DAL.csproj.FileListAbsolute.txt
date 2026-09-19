@@ -1,0 +1,14 @@
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\bin\Debug\net10.0\KASHOP.DAL.deps.json
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\bin\Debug\net10.0\KASHOP.DAL.runtimeconfig.json
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\bin\Debug\net10.0\KASHOP.DAL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\bin\Debug\net10.0\KASHOP.DAL.pdb
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.csproj.AssemblyReference.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.AssemblyInfoInputs.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.AssemblyInfo.cs
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.csproj.CoreCompileInputs.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\refint\KASHOP.DAL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.pdb
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.genruntimeconfig.cache
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\ref\KASHOP.DAL.dll
