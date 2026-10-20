@@ -13,3 +13,4 @@ C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.dl
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\refint\KASHOP.BLL.dll
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.pdb
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\ref\KASHOP.BLL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.BLL\obj\Debug\net10.0\KASHOP.BLL.sourcelink.json

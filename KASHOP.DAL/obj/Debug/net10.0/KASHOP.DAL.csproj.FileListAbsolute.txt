@@ -12,3 +12,4 @@ C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\refint\KASHOP
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.pdb
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.genruntimeconfig.cache
 C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\ref\KASHOP.DAL.dll
+C:\Users\DVDSTORE\Documents\KASHOP.PL\KASHOP.DAL\obj\Debug\net10.0\KASHOP.DAL.sourcelink.json

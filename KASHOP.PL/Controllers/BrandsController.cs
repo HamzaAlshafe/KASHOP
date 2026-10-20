@@ -11,11 +11,15 @@ namespace KASHOP.PL.Controllers
     [ApiController]
     public class BrandController : ControllerBase
     {
-        GenericRepository<Brand> repo = new GenericRepository<Brand>();
+        IGenericRepository<Brand> _repository;
+        public BrandController(IGenericRepository<Brand> repository)
+        {
+            _repository = repository;
+        }
         [HttpGet("")]
         public IActionResult Index()
         {
-            var brands = repo.Get();
+            var brands = _repository.Get();
             return Ok(brands);
         }
 
@@ -28,7 +32,7 @@ namespace KASHOP.PL.Controllers
         [HttpPost("")]
         public IActionResult Add(Brand brand)
         {
-            repo.Create(brand);
+            _repository.Create(brand);
             return Ok();
         }
     }
