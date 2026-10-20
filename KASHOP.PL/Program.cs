@@ -19,6 +19,7 @@ namespace KASHOP.PL
             builder.Services.AddOpenApi();
 
             builder.Services.AddScoped<IGenericRepository<Category>, GenericRepository<Category>>();
+            builder.Services.AddScoped<IGenericRepository<Brand>, GenericRepository<Brand>>();
             builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();

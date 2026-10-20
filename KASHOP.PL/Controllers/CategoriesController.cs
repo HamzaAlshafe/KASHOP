@@ -11,14 +11,14 @@ namespace KASHOP.PL.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-       private readonly IGenericRepository<Category> _repositroy;
-        CategoriesController(IGenericRepository<Category> repositroy) {
-            _repositroy = repositroy;
+       private readonly IGenericRepository<Category> _repository;
+        public CategoriesController(IGenericRepository<Category> repository) {
+            _repository = repository;
         }
         [HttpGet("")]
         public IActionResult Index()
         {
-            var categories = _repositroy.Get();
+            var categories = _repository.Get();
             return Ok(categories);
         }
 
@@ -31,7 +31,7 @@ namespace KASHOP.PL.Controllers
         [HttpPost("")]
         public IActionResult Add(Category category)
         {
-            _repositroy.Create(category);
+            _repository.Create(category);
             return Ok();
         }
     }
