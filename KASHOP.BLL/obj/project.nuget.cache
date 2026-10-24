@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "DRBy09XFegA=",
+  "dgSpecHash": "vqNukl8OKn0=",
   "success": true,
   "projectFilePath": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.BLL\\KASHOP.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\azure.identity\\1.17.1\\azure.identity.1.17.1.nupkg.sha512",
+    "C:\\Users\\DVDSTORE\\.nuget\\packages\\mapster\\10.0.13\\mapster.10.0.13.nupkg.sha512",
+    "C:\\Users\\DVDSTORE\\.nuget\\packages\\mapster.core\\10.0.13\\mapster.core.10.0.13.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.data.sqlclient\\6.1.6\\microsoft.data.sqlclient.6.1.6.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\6.0.2\\microsoft.data.sqlclient.sni.runtime.6.0.2.nupkg.sha512",
