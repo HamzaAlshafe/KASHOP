@@ -19,17 +19,19 @@ namespace KASHOP.BLL
 
         public async Task<List<CategoryResponse>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            var categories = await _repo.GetAsync(cancellationToken);
+            var categories = await _repo.GetAsync(cancellationToken: cancellationToken);
             return categories.Adapt<List<CategoryResponse>>();
             
         }
 
         public async Task<bool> CreateAsync(CategoryRequest request, CancellationToken cancellationToken = default)
         {
+            var existing = await _repo.GetAsync(
+                filter: c => c.Name.ToLower() == request.Name.ToLower(),
+                cancellationToken: cancellationToken
+                );
 
-            // Fix This proplem later
-            //var exisits = _repo.GetAsync().Any(c => c.Name.ToLower() == request.Name.ToLower());
-            //if (exisits) return false;
+            if (existing is not null) return false;
 
             var category = request.Adapt<Category>();
             await _repo.CreateAsync(category, cancellationToken);
