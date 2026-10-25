@@ -17,9 +17,9 @@ namespace KASHOP.PL.Controllers
             _service = service;
         }
         [HttpGet("")]
-        public IActionResult Index()
+        public async Task<IActionResult> Index(CancellationToken cancellationToken = default)
         {
-            var categories = _service.GetAll();
+            var categories = await _service.GetAllAsync(cancellationToken);
             return Ok(categories);
         }
 

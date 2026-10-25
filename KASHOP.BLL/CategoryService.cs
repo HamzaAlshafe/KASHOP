@@ -17,34 +17,36 @@ namespace KASHOP.BLL
             _repo = repo;
         }
 
-        public List<CategoryResponse> GetAll()
+        public async Task<List<CategoryResponse>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            var categories = _repo.Get();
+            var categories = await _repo.GetAsync(cancellationToken);
             return categories.Adapt<List<CategoryResponse>>();
             
         }
 
-        public bool Create(CategoryRequest request)
+        public async Task<bool> CreateAsync(CategoryRequest request, CancellationToken cancellationToken = default)
         {
-            var exisits = _repo.Get().Any(c => c.Name.ToLower() == request.Name.ToLower());
-            if (exisits) return false;
+
+            // Fix This proplem later
+            //var exisits = _repo.GetAsync().Any(c => c.Name.ToLower() == request.Name.ToLower());
+            //if (exisits) return false;
 
             var category = request.Adapt<Category>();
-            _repo.Create(category);
+            await _repo.CreateAsync(category, cancellationToken);
             return true;
         }
 
-        public CategoryResponse? GetById(int id)
+        public async Task<CategoryResponse?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Update(CategoryRequest request, int id)
+        public async Task<bool> UpdateAsync(CategoryRequest request, int id, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
-        public bool Delete(int id)
+        public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default) 
         {
             throw new NotImplementedException();
         }

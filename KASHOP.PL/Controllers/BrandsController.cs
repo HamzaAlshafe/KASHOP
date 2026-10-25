@@ -11,7 +11,7 @@ namespace KASHOP.PL.Controllers
     [ApiController]
     public class BrandController : ControllerBase
     {
-        IGenericRepository<Brand> _repository;
+        private readonly IGenericRepository<Brand> _repository;
         public BrandController(IGenericRepository<Brand> repository)
         {
             _repository = repository;
@@ -19,7 +19,7 @@ namespace KASHOP.PL.Controllers
         [HttpGet("")]
         public IActionResult Index()
         {
-            var brands = _repository.Get();
+            var brands = _repository.GetAsync();
             return Ok(brands);
         }
 
@@ -32,7 +32,7 @@ namespace KASHOP.PL.Controllers
         [HttpPost("")]
         public IActionResult Add(Brand brand)
         {
-            _repository.Create(brand);
+            _repository.CreateAsync(brand);
             return Ok();
         }
     }

@@ -51,6 +51,25 @@
           }
         }
       },
+      "Mapster/10.0.13": {
+        "dependencies": {
+          "Mapster.Core": "10.0.13"
+        },
+        "runtime": {
+          "lib/net10.0/Mapster.dll": {
+            "assemblyVersion": "10.0.13.0",
+            "fileVersion": "10.0.13.0"
+          }
+        }
+      },
+      "Mapster.Core/10.0.13": {
+        "runtime": {
+          "lib/netstandard2.0/Mapster.Core.dll": {
+            "assemblyVersion": "10.0.13.0",
+            "fileVersion": "10.0.13.0"
+          }
+        }
+      },
       "Microsoft.AspNetCore.OpenApi/10.0.10": {
         "dependencies": {
           "Microsoft.OpenApi": "2.7.5"
@@ -815,7 +834,8 @@
       },
       "KASHOP.BLL/1.0.0": {
         "dependencies": {
-          "KASHOP.DAL": "1.0.0"
+          "KASHOP.DAL": "1.0.0",
+          "Mapster": "10.0.13"
         },
         "runtime": {
           "KASHOP.BLL.dll": {
@@ -864,6 +884,20 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Mapster/10.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/FaFSm4W6rQp5kEZa7yTtvHH2yGmuC1p22Bg2zi83+W8SMJ+5RBTEWgRK0JS2S8jIdXj2hm2s4z1egjkE2azoQ==",
+      "path": "mapster/10.0.13",
+      "hashPath": "mapster.10.0.13.nupkg.sha512"
+    },
+    "Mapster.Core/10.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fLj/MDJy16QiL7IULC0+e2YXh9nNDhtzdNl13R6CI0Qh6181eadA6EHykWkJWgTHdMjC5Ured3fq5x1QV7U9vg==",
+      "path": "mapster.core/10.0.13",
+      "hashPath": "mapster.core.10.0.13.nupkg.sha512"
     },
     "Microsoft.AspNetCore.OpenApi/10.0.10": {
       "type": "package",

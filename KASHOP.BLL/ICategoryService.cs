@@ -8,10 +8,10 @@ namespace KASHOP.BLL
 {
     public interface ICategoryService
     {
-        public List<CategoryResponse> GetAll();
-        public CategoryResponse? GetById(int id);
-        bool Create(CategoryRequest request);
-        bool Update(CategoryRequest request, int id);
-        bool Delete(int id);
+        public Task<List<CategoryResponse>> GetAllAsync(CancellationToken cancellationToken = default);
+        public Task<CategoryResponse?> GetByIdAsync(int id, CancellationToken cancellationToken = default);
+        public Task<bool> CreateAsync(CategoryRequest request, CancellationToken cancellationToken = default);
+        public Task<bool> UpdateAsync(CategoryRequest request, int id, CancellationToken cancellationToken = default);
+        public Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default);
     }
 }
