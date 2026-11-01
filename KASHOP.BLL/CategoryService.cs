@@ -1,4 +1,5 @@
-﻿using KASHOP.DAL.DTO.Requests;
+﻿using KASHOP.BLL.Settings;
+using KASHOP.DAL.DTO.Requests;
 using KASHOP.DAL.DTO.Responses;
 using KASHOP.DAL.Models;
 using KASHOP.DAL.Repositories;
@@ -26,16 +27,21 @@ namespace KASHOP.BLL
 
         public async Task<bool> CreateAsync(CategoryRequest request, CancellationToken cancellationToken = default)
         {
-            var existing = await _repo.GetAsync(
-                filter: c => c.Name.ToLower() == request.Name.ToLower(),
-                cancellationToken: cancellationToken
-                );
+            
+            
+            
+            
+            
+            //var existing = await _repo.GetAsync(
+            //    filter: c => c.Name.ToLower() == request.Name.ToLower(),
+            //    cancellationToken: cancellationToken
+            //    );
 
-            if (existing is not null) return false;
+            //if (existing is not null) return false;
 
-            var category = request.Adapt<Category>();
-            await _repo.CreateAsync(category, cancellationToken);
-            return true;
+            //var category = request.Adapt<Category>();
+            //await _repo.CreateAsync(category, cancellationToken);
+            //return true;
         }
 
         public async Task<CategoryResponse?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
@@ -51,6 +57,17 @@ namespace KASHOP.BLL
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default) 
         {
             throw new NotImplementedException();
+        }
+        private static bool AreTranslationsValid(List<CategoryTranslationRequest> translations)
+        {
+            // [ {name:'mobile',language:'en'},{name:'موبايل','language':'en'} ]
+
+            var languages = translations.Select(x => x.Language).ToList();
+
+            if (languages.Distinct().Count() != languages.Count()) return false;
+
+            return languages.Count() == SupportedLanguages.Languages.Length
+                && SupportedLanguages.Languages.All(lang => languages.Contains(lang));
         }
     }
 }

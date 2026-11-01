@@ -39,7 +39,7 @@ namespace KASHOP.DAL.Repositories
             
         }
 
-        public async Task<T?> GetOneAsync(Expression<Func<T, bool>>? filter = null,
+        public async Task<T?> GetOneAsync(Expression<Func<T, bool>> filter = null,
             List<Expression<Func<T, Object>>>? includes = null,
             bool tracked = false,
             CancellationToken cancellationToken = default)
@@ -48,8 +48,6 @@ namespace KASHOP.DAL.Repositories
             if (!tracked)
                 query = query.AsNoTracking();
 
-            if (filter is not null)
-                query = query.Where(filter);
 
             if (includes is not null)
             {
