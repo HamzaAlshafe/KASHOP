@@ -46,7 +46,13 @@ namespace KASHOP.BLL
 
         public async Task<CategoryResponse?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            var category = await _repo.GetOneAsync(
+                filter: c => c.Id == id,
+                includes: [c=>c.Translations]
+                ,cancellationToken: cancellationToken
+                );
+
+            return category.Adapt<CategoryResponse>();
         }
 
         public async Task<bool> UpdateAsync(CategoryRequest request, int id, CancellationToken cancellationToken = default)
@@ -56,7 +62,15 @@ namespace KASHOP.BLL
 
         public async Task<bool> DeleteAsync(int id, CancellationToken cancellationToken = default) 
         {
-            throw new NotImplementedException();
+            var category = await _repo.GetOneAsync(
+                filter: c=>c.Id == id,
+                cancellationToken : cancellationToken
+                );
+
+            if (category is null) return false;
+
+            await _repo.RemoveAsync(category, cancellationToken);
+            return true;
         }
         private static bool AreTranslationsValid(List<CategoryTranslationRequest> translations)
         {

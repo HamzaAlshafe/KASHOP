@@ -13,8 +13,9 @@ namespace KASHOP.PL.Controllers
     [ApiController]
     public class CategoriesController : ControllerBase
     {
-       private readonly ICategoryService _service;
-        public CategoriesController(ICategoryService service) {
+        private readonly ICategoryService _service;
+        public CategoriesController(ICategoryService service)
+        {
             _service = service;
         }
         [HttpGet("")]
@@ -25,9 +26,24 @@ namespace KASHOP.PL.Controllers
         }
 
         [HttpPost("")]
-        public async Task<IActionResult> Create(CategoryRequest request, CancellationToken cancellationToken) {
+        public async Task<IActionResult> Create(CategoryRequest request, CancellationToken cancellationToken)
+        {
             var result = await _service.CreateAsync(request, cancellationToken);
             return result ? Ok() : BadRequest();
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(int id, CancellationToken cancellationToken)
+        {
+            var result = await _service.GetByIdAsync(id, cancellationToken);
+            return result is not null ? Ok(result) : BadRequest();
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(int id,CancellationToken cancellationToken)
+        {
+            var result = await _service.DeleteAsync(id,cancellationToken);
+            return result ? Ok():BadRequest();
         }
     }
 }
