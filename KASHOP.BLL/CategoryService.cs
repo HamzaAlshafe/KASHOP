@@ -20,28 +20,28 @@ namespace KASHOP.BLL
 
         public async Task<List<CategoryResponse>> GetAllAsync(CancellationToken cancellationToken = default)
         {
-            var categories = await _repo.GetAsync(cancellationToken: cancellationToken);
+            var categories = await _repo.GetAsync(
+                includes: [c=>c.Translations],
+                cancellationToken: cancellationToken);
             return categories.Adapt<List<CategoryResponse>>();
             
         }
 
         public async Task<bool> CreateAsync(CategoryRequest request, CancellationToken cancellationToken = default)
         {
-            
-            
-            
-            
-            
-            //var existing = await _repo.GetAsync(
-            //    filter: c => c.Name.ToLower() == request.Name.ToLower(),
-            //    cancellationToken: cancellationToken
-            //    );
 
-            //if (existing is not null) return false;
+            if (!AreTranslationsValid(request.Translations)) return false;
 
-            //var category = request.Adapt<Category>();
-            //await _repo.CreateAsync(category, cancellationToken);
-            //return true;
+            var names = request.Translations.Select(n => n.Name.ToLower()).ToList();
+            var existing = await _repo.GetOneAsync(
+                filter: c => c.Translations.Any(t => names.Contains(t.Name.ToLower()))
+                ,cancellationToken: cancellationToken);
+
+            if (existing is not null) return false;
+
+            var category = request.Adapt<Category>();
+            await _repo.CreateAsync(category, cancellationToken: cancellationToken);
+            return true;
         }
 
         public async Task<CategoryResponse?> GetByIdAsync(int id, CancellationToken cancellationToken = default)
@@ -60,7 +60,6 @@ namespace KASHOP.BLL
         }
         private static bool AreTranslationsValid(List<CategoryTranslationRequest> translations)
         {
-            // [ {name:'mobile',language:'en'},{name:'موبايل','language':'en'} ]
 
             var languages = translations.Select(x => x.Language).ToList();
 

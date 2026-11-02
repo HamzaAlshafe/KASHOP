@@ -40,38 +40,6 @@ namespace KASHOP.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Brands");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Image = "samsung.png",
-                            Name = "Samsung"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Image = "apple.png",
-                            Name = "Apple"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Image = "nike.png",
-                            Name = "Nike"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Image = "adidas.png",
-                            Name = "Adidas"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Image = "sony.png",
-                            Name = "Sony"
-                        });
                 });
 
             modelBuilder.Entity("KASHOP.DAL.Models.Category", b =>
@@ -82,48 +50,54 @@ namespace KASHOP.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+                });
 
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Electronics",
-                            Status = true
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Clothing",
-                            Status = true
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Sports",
-                            Status = true
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Home & Kitchen",
-                            Status = true
-                        },
-                        new
-                        {
-                            Id = 5,
-                            Name = "Books",
-                            Status = false
-                        });
+            modelBuilder.Entity("KASHOP.DAL.Models.CategoryTranslation", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("Translations");
+                });
+
+            modelBuilder.Entity("KASHOP.DAL.Models.CategoryTranslation", b =>
+                {
+                    b.HasOne("KASHOP.DAL.Models.Category", "Cagtegory")
+                        .WithMany("Translations")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cagtegory");
+                });
+
+            modelBuilder.Entity("KASHOP.DAL.Models.Category", b =>
+                {
+                    b.Navigation("Translations");
                 });
 #pragma warning restore 612, 618
         }

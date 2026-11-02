@@ -5,6 +5,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{9162A00A-22A6-44FC-168C-A902B563F5EE}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.bll\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9162A00A-22A6-44FC-168C-A902B563F5EE}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED7DDF75-51AC-5284-1654-F1949D16CBB2}|KASHOP.PL\\KASHOP.PL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{ED7DDF75-51AC-5284-1654-F1949D16CBB2}|KASHOP.PL\\KASHOP.PL.csproj|solutionrelative:kashop.pl\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9162A00A-22A6-44FC-168C-A902B563F5EE}|KASHOP.BLL\\KASHOP.BLL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.bll\\settings\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9162A00A-22A6-44FC-168C-A902B563F5EE}|KASHOP.BLL\\KASHOP.BLL.csproj|solutionrelative:kashop.bll\\settings\\mapsterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.dal\\dto\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dto\\responses\\categoryresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.dal\\models\\categorytranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\models\\categorytranslation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.dal\\dto\\requests\\categorytranslationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dto\\requests\\categorytranslationrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|c:\\users\\dvdstore\\documents\\kashop.pl\\kashop.dal\\dto\\requests\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7B6752E8-5B2F-C3E7-3BDC-0C17A5436BF2}|KASHOP.DAL\\KASHOP.DAL.csproj|solutionrelative:kashop.dal\\dto\\requests\\categoryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +38,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.PL\\Program.cs",
+              "RelativeDocumentMoniker": "KASHOP.PL\\Program.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.PL\\Program.cs",
+              "RelativeToolTip": "KASHOP.PL\\Program.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwB4AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T21:33:20.671Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapsterConfig.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.BLL\\Settings\\MapsterConfig.cs",
+              "RelativeDocumentMoniker": "KASHOP.BLL\\Settings\\MapsterConfig.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.BLL\\Settings\\MapsterConfig.cs",
+              "RelativeToolTip": "KASHOP.BLL\\Settings\\MapsterConfig.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T21:24:37.768Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoryResponse.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Responses\\CategoryResponse.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTO\\Responses\\CategoryResponse.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Responses\\CategoryResponse.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTO\\Responses\\CategoryResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T21:15:03.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryTranslation.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\Models\\CategoryTranslation.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\Models\\CategoryTranslation.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\Models\\CategoryTranslation.cs",
+              "RelativeToolTip": "KASHOP.DAL\\Models\\CategoryTranslation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T21:11:02.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryTranslationRequest.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Requests\\CategoryTranslationRequest.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTO\\Requests\\CategoryTranslationRequest.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Requests\\CategoryTranslationRequest.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTO\\Requests\\CategoryTranslationRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T21:10:46.274Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,9 +113,22 @@
               "RelativeDocumentMoniker": "KASHOP.BLL\\CategoryService.cs",
               "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.BLL\\CategoryService.cs",
               "RelativeToolTip": "KASHOP.BLL\\CategoryService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAA/wEMAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAkwC0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-24T09:47:42.332Z",
+              "WhenOpened": "2026-11-02T20:58:13.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CategoryRequest.cs",
+              "DocumentMoniker": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Requests\\CategoryRequest.cs",
+              "RelativeDocumentMoniker": "KASHOP.DAL\\DTO\\Requests\\CategoryRequest.cs",
+              "ToolTip": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.DAL\\DTO\\Requests\\CategoryRequest.cs",
+              "RelativeToolTip": "KASHOP.DAL\\DTO\\Requests\\CategoryRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-02T20:31:12.408Z",
               "EditorCaption": ""
             }
           ]

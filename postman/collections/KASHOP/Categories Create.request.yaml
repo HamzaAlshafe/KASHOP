@@ -1,0 +1,19 @@
+$kind: http-request
+url: https://localhost:7000/api/categories
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"Translations\":[\r
+
+    \        {\"Name\":\"Electronics\",\"Language\":\"en\"},\r
+
+    \        {\"Name\":\"الكترونيات\",\"Language\":\"ar\"}\r
+
+    \    ],\r
+
+    \    \"Status\": true\r
+
+    }"
+order: 2000

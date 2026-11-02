@@ -1,5 +1,6 @@
 ﻿using KASHOP.BLL;
 using KASHOP.DAL.Data;
+using KASHOP.DAL.DTO.Requests;
 using KASHOP.DAL.Models;
 using KASHOP.DAL.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -23,17 +24,10 @@ namespace KASHOP.PL.Controllers
             return Ok(categories);
         }
 
-        //[HttpGet("{id}")]
-       // public IActionResult GetById(int id)
-        //{
-        //    var category = context.Categories.Find(id);
-        //    return Ok(category);
-        //}
-        //[HttpPost("")]
-        //public IActionResult Add(Category category)
-        //{
-        //    _service.Create(category);
-        //    return Ok();
-        //}
+        [HttpPost("")]
+        public async Task<IActionResult> Create(CategoryRequest request, CancellationToken cancellationToken) {
+            var result = await _service.CreateAsync(request, cancellationToken);
+            return result ? Ok() : BadRequest();
+        }
     }
 }

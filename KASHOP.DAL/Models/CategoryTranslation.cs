@@ -10,6 +10,6 @@ namespace KASHOP.DAL.Models
         public string Name { get; set; } = null!;
         public string Language { get; set; } = null!;
         public int CategoryId { get; set; }
-        public Category Cagtegory { get; set; }
+        public Category Category { get; set; }
     }
 }

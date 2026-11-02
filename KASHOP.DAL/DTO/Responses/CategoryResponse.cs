@@ -1,4 +1,5 @@
-﻿using System;
+﻿using KASHOP.DAL.DTO.Requests;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
