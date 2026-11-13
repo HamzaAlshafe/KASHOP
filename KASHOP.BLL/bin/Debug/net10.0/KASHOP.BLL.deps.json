@@ -10,6 +10,7 @@
         "dependencies": {
           "KASHOP.DAL": "1.0.0",
           "Mapster": "10.0.13",
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "System.Security.Cryptography.Pkcs": "10.0.14"
         },
         "runtime": {
@@ -58,6 +59,17 @@
           "lib/netstandard2.0/Mapster.Core.dll": {
             "assemblyVersion": "10.0.13.0",
             "fileVersion": "10.0.13.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/5.0.17": {
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "10.0.12"
+        },
+        "runtime": {
+          "lib/net5.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "assemblyVersion": "5.0.0.0",
+            "fileVersion": "5.0.1722.21507"
           }
         }
       },
@@ -554,6 +566,7 @@
       },
       "KASHOP.DAL/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "5.0.17",
           "Microsoft.EntityFrameworkCore": "10.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.12",
           "System.Security.Cryptography.Pkcs": "10.0.14"
@@ -600,6 +613,13 @@
       "sha512": "sha512-fLj/MDJy16QiL7IULC0+e2YXh9nNDhtzdNl13R6CI0Qh6181eadA6EHykWkJWgTHdMjC5Ured3fq5x1QV7U9vg==",
       "path": "mapster.core/10.0.13",
       "hashPath": "mapster.core.10.0.13.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Http.Features/5.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3jG2xS+dx8DDCGV/F+STdPTg89lX3ao3dF/VEPvJaz3wzBIjuadipTtYNEXDIVuOPZwb6jdmhrX9jkzOIBm5cw==",
+      "path": "microsoft.aspnetcore.http.features/5.0.17",
+      "hashPath": "microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512"
     },
     "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
       "type": "package",

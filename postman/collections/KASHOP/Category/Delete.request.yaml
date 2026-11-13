@@ -1,0 +1,4 @@
+$kind: http-request
+url: https://localhost:7000/api/categories
+method: DELETE
+order: 4000

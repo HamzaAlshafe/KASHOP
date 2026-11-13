@@ -1,0 +1,6 @@
+$kind: http-request
+url: https://localhost:7000/api/products
+method: GET
+headers:
+  Accept-Language: en
+order: 2000

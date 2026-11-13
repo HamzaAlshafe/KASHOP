@@ -1,19 +1,19 @@
 $kind: http-request
 url: https://localhost:7000/api/categories
-method: POST
+method: GET
 body:
   type: json
   content: "{\r
 
     \    \"Translations\":[\r
 
-    \        {\"Name\":\"Books\",\"Language\":\"en\"},\r
+    \        {\"Name\":\"Electronics\",\"Language\":\"en\"},\r
 
-    \        {\"Name\":\"كتب\",\"Language\":\"ar\"}\r
+    \        {\"Name\":\"الكترونيات\",\"Language\":\"ar\"}\r
 
     \    ],\r
 
     \    \"Status\": true\r
 
     }"
-order: 2000
+order: 1000

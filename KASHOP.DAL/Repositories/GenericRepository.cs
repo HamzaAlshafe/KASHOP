@@ -16,27 +16,27 @@ namespace KASHOP.DAL.Repositories
         {
             _context = context;
         }
-        
-        public async Task<List<T>> GetAsync(Expression<Func<T,bool>>? filter = null,
-            List<Expression<Func<T, Object>>>? includes = null ,
-            bool tracked=false,
+
+        public async Task<List<T>> GetAsync(Expression<Func<T, bool>>? filter = null,
+            List<Expression<Func<T, Object>>>? includes = null,
+            bool tracked = false,
             CancellationToken cancellationToken = default)
         {
             IQueryable<T> query = _context.Set<T>().AsQueryable();
             if (!tracked)
                 query = query.AsNoTracking();
 
-            if(filter is not null)
+            if (filter is not null)
                 query = query.Where(filter);
 
-            if(includes is not null)
+            if (includes is not null)
             {
-                foreach(var include in includes)
+                foreach (var include in includes)
                     query = query.Include(include);
             }
 
             return await query.ToListAsync(cancellationToken);
-            
+
         }
 
         public async Task<T?> GetOneAsync(Expression<Func<T, bool>> filter = null,
@@ -55,7 +55,7 @@ namespace KASHOP.DAL.Repositories
                     query = query.Include(include);
             }
 
-            return await query.FirstOrDefaultAsync(filter,cancellationToken);
+            return await query.FirstOrDefaultAsync(filter, cancellationToken);
 
         }
 
@@ -65,12 +65,14 @@ namespace KASHOP.DAL.Repositories
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task UpdateAsync(T entitiy, CancellationToken cancellationToken = default) {
+        public async Task UpdateAsync(T entitiy, CancellationToken cancellationToken = default)
+        {
             _context.Set<T>().Update(entitiy);
             await _context.SaveChangesAsync(cancellationToken);
         }
 
-        public async Task RemoveAsync(T entitiy, CancellationToken cancellationToken = default) {
+        public async Task RemoveAsync(T entitiy, CancellationToken cancellationToken = default)
+        {
             _context.Set<T>().Remove(entitiy);
             await _context.SaveChangesAsync(cancellationToken);
         }
