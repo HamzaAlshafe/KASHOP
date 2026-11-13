@@ -27,9 +27,14 @@ namespace KASHOP.BLL
         }
         public void Delete(string filename)
         {
-            throw new NotImplementedException();
+            var SafeName = Path.GetFileName(filename);
+            if (string.IsNullOrEmpty(SafeName)) return;
+
+            var filepath = Path.Combine(ImagePath, filename);
+            if (File.Exists(filepath))
+                File.Delete(filepath);
         }
 
-        
+
     }
 }

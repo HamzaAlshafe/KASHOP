@@ -1,0 +1,63 @@
+$kind: http-request
+url: https://localhost:7000/api/products
+method: POST
+body:
+  type: formdata
+  content:
+    - type: text
+      key: Price
+      value: "999"
+      description: ""
+      disabled: false
+    - type: text
+      key: Quantity
+      value: "55"
+      description: ""
+      disabled: false
+    - type: text
+      key: Discount
+      value: "20"
+      description: ""
+      disabled: false
+    - type: file
+      key: MainImage
+      src:
+        - /C:/Users/DVDSTORE/Pictures/Screenshots/Screenshot 2026-11-03 162021.png
+      description: ""
+      disabled: false
+    - type: text
+      key: CategoryId
+      value: "1"
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[0].Name
+      value: Laptop
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[0].Description
+      value: Gaming Laptop
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[0].Language
+      value: en
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[1].Name
+      value: لابتوب
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[1].Description
+      value: لابتوب العاب
+      description: ""
+      disabled: false
+    - type: text
+      key: Translations[1].Language
+      value: ar
+      description: ""
+      disabled: false
+order: 1000

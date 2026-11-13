@@ -1,0 +1,7 @@
+$kind: http-request
+url: https://localhost:7000/api/categories
+method: POST
+body:
+  type: json
+  content: ""
+order: 2000

@@ -1,6 +1,4 @@
 $kind: http-request
 url: https://localhost:7000/api/categories
 method: GET
-headers:
-  Accept-Language: en
-order: 1000
+order: 3000
