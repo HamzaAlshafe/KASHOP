@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KzrURpnDSZ0=",
+  "dgSpecHash": "FAwdBuuMnrI=",
   "success": true,
   "projectFilePath": "C:\\Users\\DVDSTORE\\Documents\\KASHOP.PL\\KASHOP.PL\\KASHOP.PL.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\mapster\\10.0.13\\mapster.10.0.13.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\mapster.core\\10.0.13\\mapster.core.10.0.13.nupkg.sha512",
+    "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\10.0.12\\microsoft.aspnetcore.identity.entityframeworkcore.10.0.12.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.10\\microsoft.aspnetcore.openapi.10.0.10.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\DVDSTORE\\.nuget\\packages\\microsoft.build.framework\\18.0.2\\microsoft.build.framework.18.0.2.nupkg.sha512",
