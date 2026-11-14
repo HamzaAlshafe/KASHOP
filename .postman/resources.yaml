@@ -1,9 +1,0 @@
-workspace:
-  id: 20768ca3-3549-4b89-a0fd-18435c293cbb
-
-localResources:
-  specs:
-    - ../C:/Users/DVDSTORE/Documents/KASHOP.PL/KASHOP.PL/obj/Debug/net10.0/EndpointInfo/KASHOP.PL.json
-resourceNameMappings:
-  specs:
-    - ../KASHOP.PL/obj/Debug/net10.0/EndpointInfo/KASHOP.PL.json: KASHOP.PL.json
