@@ -1,9 +1,9 @@
 workspace:
   id: 20768ca3-3549-4b89-a0fd-18435c293cbb
+
 localResources:
   specs:
-    - ../KASHOP.PL/obj/Debug/net10.0/EndpointInfo/KASHOP.PL.json
-cloudResources:
-  collections:
-    ../postman/collections/KASHOP: 58345181-00e0d0f4-154b-42cd-9079-8dfb924847c5
-    ../postman/collections/CRUD: 58345181-72914da6-19a9-4a92-82a5-1552c225ce6f
+    - ../C:/Users/DVDSTORE/Documents/KASHOP.PL/KASHOP.PL/obj/Debug/net10.0/EndpointInfo/KASHOP.PL.json
+resourceNameMappings:
+  specs:
+    - ../KASHOP.PL/obj/Debug/net10.0/EndpointInfo/KASHOP.PL.json: KASHOP.PL.json
